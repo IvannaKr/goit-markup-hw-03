@@ -2,6 +2,18 @@ body {
   font-family: "Roboto", sans-serif;
   background: #fff;
   color: #434455;
+  width: 1440px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 a {
   text-decoration: none;
@@ -9,9 +21,16 @@ a {
 
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
 }
 
 .visually-hidden {
+  display: none;
 }
 
 /* ----------HEADER---------- */
@@ -23,11 +42,32 @@ ul {
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  display: inline-flex;
+  height: 24px;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 156px;
 }
 .header-logo-studio {
-  color: #2e2f42 ;
+  color: #2e2f42;
 }
 
+.header-navigation {
+  flex-grow: 1;
+  align-items: center;
+}
+
+.header-menu-list {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 24px;
+  margin-right: 332px;
+  margin-bottom: 24px;
+  margin-left: 76px;
+}
 .header-menu-link {
   color: #2e2f42;
   font-size: 16px;
@@ -39,9 +79,10 @@ ul {
 .header-menu-link:hover,
 .header-menu-link:focus,
 .header-menu-link:active {
-    color: #404bbf;
+  color: #404bbf;
 }
 .address-list {
+  flex-grow: 1;
   color: #434455;
   font-size: 16px;
   font-weight: 400;
@@ -50,20 +91,34 @@ ul {
   font-style: normal;
 }
 
+.address-item {
+  display: flex;
+  gap: 40px;
+}
+
 .address-contact-details {
-    color: #434455;
+  color: #434455;
 }
 .address-contact-details:hover,
 .address-contact-details:focus {
-    color: #404bbf;
+  color: #404bbf;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
 /* ----------------------- */
 
 /* ---------HERO---------- */
 
 .hero {
   background: #2e2f42;
+  display: flex;
+  width: 1440px;
+  height: 600px;
+  flex-shrink: 0;
+  margin-bottom: 120px;
 }
 
 .hero-title {
@@ -73,11 +128,15 @@ ul {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  width: 496px;
+  height: 120px;
+  text-align: center;
+  margin: 188px 472px 48px 472px;
 }
 
 .hero-btn:focus,
 .hero-btn:hover {
-    background-color: #404BBF;
+  background-color: #404bbf;
 }
 
 .hero-btn {
@@ -89,8 +148,22 @@ ul {
   letter-spacing: 0.04em;
   background: #4d5ae5;
   cursor: pointer;
-}
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: center;
+  gap: 10px;
 
+  width: auto 169px;
+  height: auto 56px;
+}
+.hero-container {
+  width: 1440px;
+  height: 600px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 /*-------------------- */
 
 /* ----------features-------- */
@@ -99,8 +172,14 @@ ul {
   background: #fff;
 }
 .features-list {
+  display: flex;
+  padding-right: 156px;
+  padding-left: 156px;
+  padding-bottom: 120px;
+  gap: 24px;
 }
 .features-item {
+  width: calc((100%-24px * 3) / 4);
 }
 .features-subtitle {
   color: #2e2f42;
@@ -116,13 +195,17 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
+.features-container {
+}
 /*--------------------------------*/
 
 /* ------------OUR TEAM---------- */
 
 .team {
   background: #f4f4fd;
+  width: 1440px;
+  height: 732px;
+  flex-shrink: 0;
 }
 .team-title {
   color: #2e2f42;
@@ -133,15 +216,29 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-top: 120px;
+  margin-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
+  display: flex;
+  padding-bottom: 120px;
+  flex-direction: row;
+  padding: 0;
+  margin-left: 156px;
+  margin-right: 156px;
+  gap: 24px;
 }
 
 .team-item {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
+  width: calc((100%- 72px) / 4);
 }
 
 .team-img {
+  width: 264px;
+  height: 260px;
 }
 
 .team-subtitle {
@@ -151,6 +248,8 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 0px;
+  margin-top: 32px;
 }
 .team-position {
   color: #434455;
@@ -159,10 +258,12 @@ ul {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-.team-list-item {
+  margin-bottom: 32px;
+  margin-top: 8px;
 }
 
+.team-container {
+}
 /*--------------------------------*/
 
 /* ------------OUR portfolio---------- */
@@ -178,14 +279,36 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-top: 120px;
+  margin-bottom: 72px;
 }
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  margin-top: 0;
+  margin-left: 156px;
+  margin-bottom: 120px;
 }
 
 .portfolio-item {
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+  background: var(--WHITE, #fff);
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
 }
 
 .portfolio-img {
+  margin: 0 auto;
+  margin-bottom: 36px;
+  width: 360px;
+  height: 300px;
 }
 
 .portfolio-subtitle {
@@ -194,6 +317,8 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-left: 16px;
+  margin-bottom: 0;
 }
 .portfolio-text {
   color: #434455;
@@ -201,13 +326,22 @@ ul {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-left: 16px;
+  margin-bottom: 32px;
+  margin-top: 8px;
 }
 
+.portfolio-container {
+}
 /*--------------------------------*/
 
 /* ------------FOOTER---------- */
 .footer {
   background: #2e2f42;
+  width: 1440px;
+  height: 312px;
+  flex-shrink: 0;
+  display: flex;
 }
 .footer-logo {
   color: #4d5ae5;
@@ -217,6 +351,14 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: flex;
+  width: 44px;
+  height: 21px;
+  justify-content: center;
+  padding-top: 101.5px;
+  padding-right: 1169px;
+  padding-bottom: 17.5px;
+  padding-left: 209px;
 }
 .footer-logo-studio {
   color: #f4f4fd;
@@ -226,6 +368,10 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: flex;
+  width: 71px;
+  height: 21px;
+  justify-content: center;
 }
 .footer-text {
   color: #f4f4fd;
@@ -233,6 +379,13 @@ ul {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
+  margin-top: 17.5px;
+  margin-right: 1020px;
+  margin-bottom: 100px;
+  margin-left: 156px;
 }
 
+.footer-container {
+}
 /*--------------------------------*/
