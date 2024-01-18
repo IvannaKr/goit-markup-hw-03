@@ -378,6 +378,7 @@ flex-direction: column;
   height: 312px;
   flex-shrink: 0;
   display: flex;
+  padding: 100px 0;
 }
 .footer-logo {
   color: #4d5ae5;
@@ -404,10 +405,11 @@ flex-direction: column;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: flex;
+  display: inline-block;
   width: 71px;
   height: 21px;
   justify-content: center;
+  margin-bottom: 16px;
 }
 .footer-text {
   color: #f4f4fd;
