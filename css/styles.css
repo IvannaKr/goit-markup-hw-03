@@ -192,6 +192,7 @@ img {
 
 .features {
   background: #fff;
+  padding: 120px 0;
 }
 .features-list {
   display: flex;
@@ -218,7 +219,6 @@ img {
   letter-spacing: 0.02em;
 }
 .features-container {
-  padding: 120px 0;
 }
 /*--------------------------------*/
 
