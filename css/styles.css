@@ -199,9 +199,10 @@ img {
   padding-left: 156px;
   padding-bottom: 120px;
   gap: 24px;
+  flex-basis: calc((100% - 72px) / 4);
 }
 .features-item {
-  flex-basis: calc((100% - 72px) / 4);
+ 
 }
 .features-subtitle {
   color: #2e2f42;
