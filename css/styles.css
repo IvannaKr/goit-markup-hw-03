@@ -63,7 +63,6 @@ img {
   margin-top: 24px;
   margin-right: 76px;
   margin-bottom: 24px;
-  margin-left: 156px;
 }
 .header-logo-studio {
   color: #2e2f42;
@@ -80,9 +79,7 @@ img {
   align-items: flex-start;
   gap: 40px;
   margin-top: 24px;
-  margin-right: 332px;
   margin-bottom: 24px;
-  margin-left: 76px;
 }
 .header-menu-link {
   color: #2e2f42;
@@ -156,7 +153,7 @@ img {
   max-width: 496px;
   height: 120px;
   text-align: center;
-  margin: 188px 472px 48px 472px;
+ 
 }
 
 .hero-btn:focus,
