@@ -388,14 +388,15 @@ flex-direction: column;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: flex;
+  display: inline-block;
   width: 44px;
   height: 21px;
   justify-content: center;
-  padding-top: 101.5px;
-  padding-right: 1169px;
-  padding-bottom: 17.5px;
-  padding-left: 209px;
+  margin-bottom: 16px;
+  
+
+
+  
 }
 .footer-logo-studio {
   color: #f4f4fd;
