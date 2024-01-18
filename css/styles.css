@@ -344,6 +344,7 @@ flex-direction: column;
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-left: 16px;
+  margin-bottom: 8px;
 }
 .portfolio-text {
   color: #434455;
